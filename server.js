@@ -11,7 +11,7 @@ app.use(cors({origin:true,credentials: true}));
 app.use(express.json({ extended: false }))
 
 app.use('/api/auth', require('./routes/auth'))
-app.use('/api/booking', require('./routes/booking'))
+app.use('/api/bookings', require('./routes/bookings'))
 app.use('/api/messages', require('./routes/messages'))
 app.use('/api/users', require('./routes/users'))
 
