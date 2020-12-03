@@ -15,7 +15,7 @@ router.get('/', auth, async (req, res) => {
     }
 })
 
-router.post('/', auth, [
+router.post('/', [
     check('name', 'Name is required').not().isEmpty(),
     check('email', 'Please enter a valid email').isEmail(),
     check('phone', 'Phone is required').not().isEmpty(),
